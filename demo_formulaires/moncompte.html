@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mon compte</title>
+</head>
+<body>
+    <nav>
+        <img src="/images/logo-my-music.jpg" alt="logo My Music" height="100"/>
+        <h1>My music</h1>
+        <img id="avatar" src="/images/female-avatar.jpg" alt="avatar" height="100"/>
+        <p>Maud, connecté</p>
+        <a href="/demo_formulaires/moncompte.html">Mon compte </a>|<a href="/demo_formulaires/index.html"> Déconnexion</a>
+    </nav>
+    <div id="formulaire">
+        <h2>Mon compte</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Vos informations personnelles</legend>
+                <div>
+                    <label for="nom">Nom * : </label>
+                    <input type="text" name="nom" id="nom"
+                        placeholder="Votre nom ?"
+                        maxlength="15"
+                        autofocus="autofocus"
+                        required="required">
+                </div>
+                <br>
+                <div>
+                    <label for="prénom">Prénom * : </label>
+                    <input type="text" name="prénom" id="prénom"
+                        placeholder="Votre prénom ?"
+                        maxlength="15"
+                        required="required">
+                </div>
+                <br>
+                <div>
+                    <label for="naissance">Date de naissance :</label>
+                    <input type="date" name="dateDeNaissance" id="naissance">
+                </div>
+                <br>
+                <div>
+                    <label for="groupePréféré">Groupe préféré :</label>
+                    <select name="groupePréféré" id="groupe" size="1">
+                        <optgroup label="Rock">
+                            <option value="u2">U2</option>
+                            <option value="scorpions">Scorpions</option>
+                            <option value="pinkfloyd">Pink Floyd</option>
+                            <option value="thecure">The Cure</option>
+                        </optgroup>
+                        <optgroup label="Pop">
+                            <option value="indochine">Indochine</option>
+                            <option value="louiseattack">Louise Attack</option>
+                            <option value="superbus">Superbus</option>
+                            <option value="bbbrunes">BB Brunes</option>
+                        </optgroup>
+                        <optgroup label="Rap">
+                            <option value="orelsan">Orelsan</option>
+                            <option value="iam">I am</option>
+                            <option value="ntm">NTM</option>
+                            <option value="fugees">Fugees</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email * :</label>
+                    <input type="email" name="email" id="email"
+                    placeholder="Votre email ?"
+                    required="required">
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    placeholder="Votre téléphone ?">
+                </div>
+                <br>
+                <div>
+                    <label for="mdp">Mot de passe : </label>
+                    <input type="password" name="mdp" id="mdp">
+                </div>
+                <br>
+                <div>
+                    <label for="mdprepete">Répéter le mot de passe : </label>
+                    <input type="password" name="mdp" id="mdprepete">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Votre formule abonnement</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <input type="radio" name="abonnement" id="premiumplus" value="premiumplus">
+                                <label for="premiumplus">Premium +</label>
+                            </th>
+                            <th>
+                                <input type="radio" name="abonnement" id="premium" value="premium">
+                                <label for="premium">Premium</label>
+                            </th>
+                            <th>
+                                <input type="radio" name="abonnement" id="discovery" value="discovery">
+                                <label for="discovery">Discovery</label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Accès web</strong></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Accès mobile</strong></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                            <td><img src="/images/red-cross.png" alt="red cross checkbox" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ecoute illimité</strong></td>
+                            <td><img src="/images/green-check.png" alt="green checkbox" height="30"></td>
+                            <td><img src="/images/red-cross.png" alt="red cross checkbox" height="30"></td>
+                            <td><img src="/images/red-cross.png" alt="red cross checkbox" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarifs</strong></td>
+                            <td>11,99€/mois</td>
+                            <td>5,99€/mois</td>
+                            <td>Gratuit 1 mois</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Recevoir nos newsletters</label>
+                    <input type="checkbox" name="newspartner" id="newspartner">
+                    <label for="newspartner">Recevoir les newsletters de nos partenaires</label>
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <div id="valider">
+                <input type="reset" value="Annuler">
+                <input type="submit" value="Valider">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

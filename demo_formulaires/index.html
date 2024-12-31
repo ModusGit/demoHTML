@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nom">Votre nom * : </label> <!-- étiquette là pour le formulaire avec l'id "nom" -->
+            <input type="text" name="nom" id="nom"
+                placeholder="Votre nom ?"
+                maxlength="10"
+                autofocus="autofocus"
+                required="required">
+        </div>
+        <br>
+        <div>
+            <label for="mdp">Mot de passe : </label>
+            <input type="password" name="mdp" id="mdp">
+        </div>
+        <br>
+        <div>
+            <label for="comm">Commentaire : </label>
+            <br>
+            <textarea name="comm" id="comm" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="sport">Sport préféré : </label>
+            <select name="sport" id="sport" size="1">
+                <optgroup label="Athlétisme">
+                    <option value="marathon">Marathon</option>
+                    <option value="100m">100 mètres</option>
+                    <option value="relais">Relais</option>
+                    <option value="sautdehaie">Saut de haie</option>
+                </optgroup>
+                <optgroup label="Arts martiaux">
+                    <option value="judo">Judo</option>
+                    <option value="kendo">Kendo</option>
+                    <option value="jujitsu">Jujitsu</option>
+                    <option value="karaté">Karaté</option>
+                </optgroup>
+                    <option value="basket">Basket</option>
+                    <option value="football">Football</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Votre pizza avec ?</p><br>
+            <input type="checkbox" name="topping1" id="topping1">
+            <label for="topping1">Mozarella</label>
+            <br>
+            <input type="checkbox" name="topping2" id="topping2">
+            <label for="topping2">Jambon</label>
+            <br>
+            <input type="checkbox" name="topping3" id="topping3">
+            <label for="topping3">Champignons</label>
+            <br>
+            <input type="checkbox" name="topping4" id="topping4">
+            <label for="topping4">Poivrons</label>
+            <br>
+        </div>
+        <br>
+        <div>
+            <p>Votre moyen de paiement ?</p>
+            <input type="radio" name="mode" id="cb" value="cb">
+            <label for="cb">Carte bancaire</label>
+            <br>
+            <input type="radio" name="mode" id="cheque" value="cheque">
+            <label for="cheque">Chèque</label>
+            <br>
+            <input type="radio" name="mode" id="espece" value="espece">
+            <label for="espece">Espèce</label>
+            <br>
+        </div>
+        <br>
+        <div>
+            <input type="email"><br>
+            <input type="url"><br>
+            <input type="date"><br>
+            <input type="month"><br>
+            <input type="week"><br>
+            <input type="time" min="11:00" max="23:00"><br>
+            <input type="datetime"><br><!-- pas supporté par les navigateurs, censé donner la date et l'heure -->
+            <input type="color"><br>
+            <input type="range" min="1" max="10" value="3" step="1"><br><!-- pas utilisé -->
+            <input type="number" min="1" max="10" value="3" step="1"><br>
+        </div>
+        <br>
+        <input type="reset" value="Vider le formulaire">
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>

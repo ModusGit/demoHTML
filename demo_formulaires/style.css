@@ -1,0 +1,36 @@
+* {
+    margin:0;
+}
+
+nav {
+    background-color: #2A0632;
+    color:#FA5E69;
+    width:fit-content;
+    display: inline-block;
+    position:sticky;
+    top:0px;
+    border-bottom: #F1297D 1px solid;
+}
+body {
+    background-color: #2a063256;
+}
+
+h1 {
+    color:#F1297D;
+}
+
+#avatar {
+    border-radius: 50%;
+}
+
+#formulaire {
+    border-color:#2A0632 solid;
+    border-width: 1px;
+    border-radius: 50px;
+    margin: 10px; 
+    padding: 20px;
+}
+
+#valider {
+    text-align: center;
+}
