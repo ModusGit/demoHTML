@@ -1,0 +1,10 @@
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(50, 83, 216);
+  }
+
+th,td {
+  border: 1px solid black;
+  padding: 8px 40px;
+  text-align: center;
+  vertical-align: center;
+}
