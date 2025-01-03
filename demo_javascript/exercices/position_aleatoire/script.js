@@ -12,7 +12,7 @@ function updateCoordinatesBtn() {
 
     // Update the button's position
     btn.style.position = "absolute";
-    btn.style.left = randomX + "px";
+    btn.style.left = randomX + "px"; //style. a besoin d'une unité px à la fin pour fonctionner
     btn.style.top = randomY + "px";
 }
 

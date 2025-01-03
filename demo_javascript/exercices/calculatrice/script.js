@@ -15,7 +15,7 @@ function additionner() {
     if (!isNaN(sum)) {
         resultat.innerHTML = sum;
     } else {
-        resultat.innerHTML = "";
+        resultat.innerHTML = 0;
     }
 }
 

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculatrice</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Calculatrice</h1>
-    <input type="text" id="saisien1">
-    <p>+</p>
-    <input type="text" id="saisien2">
-    <p>=</p>
-    <p id="resultat"></p>
+    <div>
+        <input type="number" id="saisien1">
+        &nbsp;+&nbsp; <!-- // &nbsp; ajoute un espace  -->
+        <input type="number" id="saisien2">
+        &nbsp;=&nbsp;
+        <span id="resultat"></span>
+    </div>
 </body>
 </html>
