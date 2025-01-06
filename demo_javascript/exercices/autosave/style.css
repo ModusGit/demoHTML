@@ -1,3 +1,20 @@
-* {
-    margin:0;
+textarea {
+    height:200px;
+    width: 400px;
 }
+
+table {
+    width: 400px;
+    border: none;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+      background-color: rgba(50, 191, 216, 0.658);
+    }
+  
+  th,td {
+    padding: 5px 10px;
+    text-align: left;
+    vertical-align: center;
+    border: none;
+  }
