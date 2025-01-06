@@ -9,7 +9,7 @@ const displayNote = document.getElementById("displayNote");
 submitButton.addEventListener("click", function(event) {
     
     // Empêcher le formulaire de se soumettre et de recharger la page
-    event.preventDefault();
+    event.preventDefault(); //le comportement par défaut est annulé
 
     // Récupérer la valeur des inputs
     const title = titleInput.value;
@@ -19,6 +19,7 @@ submitButton.addEventListener("click", function(event) {
     // Créer un nouvel élément div pour afficher la note
     const noteDiv = document.createElement("div");
     noteDiv.className = "noteStyle"; // Ajouter la classe 'note' pour le style
+    //noteDiv.classList.add("noteStyle")
     noteDiv.style.backgroundColor = color; // Appliquer la couleur choisie
 
     // Ajouter le titre et la note à la div
@@ -27,7 +28,7 @@ submitButton.addEventListener("click", function(event) {
     const noteContent = document.createElement("p");
     noteContent.textContent = note;
 
-    // CréeR un bouton de suppression à la note
+    // Créer un bouton de suppression à la note
     const deleteNote = document.createElement("button");
     deleteNote.innerHTML = "&#10008";
     deleteNote.className = "deleteNote";
@@ -72,10 +73,3 @@ submitButton.addEventListener("click", function(event) {
 
 // Avec ce code, lorsque vous saisissez un titre, une note et une couleur, puis cliquez sur le bouton "Enregistrer", 
 // la note sera affichée dans le div displayNote avec les informations saisies et la couleur choisie.
-
-
-    
-
-
-
-
